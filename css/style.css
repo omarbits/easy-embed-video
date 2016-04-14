@@ -1,0 +1,240 @@
+/* General Styling */
+
+	body {
+		font-family: 'Lato', sans-serif;
+		background-color:  #8B929B;
+		min-width: 760px;
+	}
+
+	#container {
+		max-width: 750px;
+		margin: 20px auto;
+		text-align: center;
+		background-color: white;
+		position: relative;
+	}
+
+	#content{
+		padding: 12px 0px 12px 0px;
+	}
+
+  .wrapper{
+		width: 90%;
+		margin: auto;
+	}
+
+	.pure-g > div {
+		position: relative;
+	}
+
+  #video_url {width: 100%;}
+
+  #video_start_time, #video_end_time {width: 70%;}
+
+  h1 { letter-spacing: 1px; word-spacing: 10px; }
+
+  .pure-g {margin-bottom: 20px; margin-top: 20px;}
+
+/* Text Input Styling */
+
+  label{
+    display: block;
+    /*text-transform: uppercase;*/
+    font-size: 12px;
+    color: gray;
+    margin: 0.3em 0.6em;
+    letter-spacing: 0px;
+		width: 100%;
+
+    &:first-child { margin-top: -0.5em; }
+  }
+
+  input{
+    font-weight: 300;
+    border: 1px solid #E3E3E3;
+    background-color: #E3E3E3;
+    outline: none;
+    height: 1.7em;
+    font-size: 17px;
+    padding: 2px 10px;
+    color: #777777;
+    transition: all 350ms;
+
+    &[type="text"]{
+    }
+
+    &:focus, &[type=submit]:hover, &[type=submit]:active {
+      background-color: #ffffff;
+      border: 1px solid #777;
+    }
+
+    &[type=submit] {
+      font-size: 1.5em;
+    }
+
+		&[type="text"] {
+			margin-bottom: 18px;
+		}
+
+  }
+
+input, select {
+	margin-bottom: 20px;
+}
+
+/* Header Styling */
+
+  header {
+    text-align: center;
+    color: black;
+    background-color: #E3E3E3;
+    padding: 1px 10px;
+    font-weight: 900;
+  }
+
+  header em{
+    background-color: #E02D20;
+		color: white;
+    font-style: normal;
+    font-size: 90%;
+    padding: 6px 4px;
+		border-radius: 10px;
+  }
+
+
+/* Styling for Hour:Minute:Seconds Input Boxes*/
+
+  .group_input {
+    /*max-width: 200px;*/
+    margin:auto;
+    background-color: #E3E3E3;
+    padding-bottom: 2px;
+  }
+
+  .group_input input{
+    padding: 2px 3px;
+    margin-bottom: 0px;
+    border: transparent;
+  }
+
+	.time_input input{
+    text-align: right;
+		/*min-width: 50px;*/
+		width: 28%;
+	}
+
+	.dimension_input input{
+		width: 45%;
+		text-align: center;
+	}
+
+  .group_input input:not(:last-child){
+    margin-right: 2%;
+  }
+
+/* Output Code Styling */
+
+  #outputDiv {
+		word-wrap:
+		break-word;
+		text-align: left;
+		background-color: #E3E3E3;
+    border: transparent;
+		color: #777777;
+	}
+
+	#demoDiv {
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+/* Footer Styling */
+
+footer {
+	color: #777777;
+}
+
+footer a{
+	text-decoration: none;
+	color: #777777;
+}
+
+/* Add This Styling */
+.addthis_native_toolbox{
+	margin: auto;
+	width: 450px;
+}
+
+
+/* Tooltip Styling */
+
+	.help-tip{
+		display: inline-block;
+		margin-right: 5px;
+		text-align: center;
+		background-color: #E3E3E3;
+		border-radius: 50%;
+		width: 18px;
+    height: 18px;
+    font-size: 14px;
+    line-height: 19px;
+		cursor: default;
+	}
+
+	.help-tip:before{
+		content:'?';
+		font-weight: bold;
+		font-size: 10px;
+		color:#777777;
+	}
+
+	.help-tip:hover p{
+		display:block;
+		transform-origin: 100% 0%;
+		-webkit-animation: fadeIn 0.3s ease-in-out;
+		animation: fadeIn 0.3s ease-in-out;
+
+	}
+
+	.help-tip p{	/* The tooltip */
+		display: none;
+		text-align: left;
+		background-color: rgba(255, 255, 255, 0.7);;
+		padding: 20px;
+		width: 300px;
+		position: absolute;
+		border-radius: 3px;
+		box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+		right: -4px;
+		color: black;
+		font-size: 13px;
+		line-height: 1.4;
+		z-index: 1000;
+	}
+
+	.help-tip p:after{ /* Prevents the tooltip from being hidden */
+		width:100%;
+		height:40px;
+		content:'';
+		position: absolute;
+		top:-40px;
+		left:0;
+	}
+
+	/* CSS animation */
+
+	@-webkit-keyframes fadeIn {
+		0% {
+			opacity:0;
+			transform: scale(0.6);
+		}
+
+		100% {
+			opacity:100%;
+			transform: scale(1);
+		}
+	}
+
+	@keyframes fadeIn {
+		0% { opacity:0; }
+		100% { opacity:100%; }
+	}
