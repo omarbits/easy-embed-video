@@ -2,7 +2,8 @@
  
  A simlpe online tool for generating perfect YouTube HTML code for whatever video you want to embed on your website.
  
- Link:[http://omarbits.github.io/easy-embed-video/](http://omarbits.github.io/easy-embed-video/)
+ Link:
+ [http://omarbits.github.io/easy-embed-video/](http://omarbits.github.io/easy-embed-video/)
  
  Features include:
  - Set video Start Time
@@ -15,8 +16,6 @@
  - Show/Hide Video Title and Video Uploader (Channel Name)
  - Show/Hide Closed Caption
  - Enable/Disable Full Screen
- - 
- 
  
  
  
